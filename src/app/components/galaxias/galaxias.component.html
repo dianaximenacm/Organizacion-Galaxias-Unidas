@@ -1,0 +1,89 @@
+<section class="sliderdivtext">
+
+    <div class="textoslider">
+
+        <h1 class="tituloslider2">
+            NUESTRAS COMUNIDADES
+            <br> </h1>
+            <h2 class="tituloslider1">
+                En esta sección encontrarás trámites y servicios relacionados con el tipo de población de tu interés.
+            </h2>
+            
+            <button (click)="mostrar1($event)">Consulta Rápida </button> 
+          
+           
+
+    </div>
+    <div class="slider">
+        <ul>
+            <li *ngFor="let img of imagen1">
+                <img [src]="img" class="imagenslider" />
+            
+            </li>
+
+            <li *ngFor="let img of imagen2">
+                <img [src]="img" class="imagenslider" />
+              
+            </li>
+
+            <li *ngFor="let img of imagen3">
+                <img [src]="img" class="imagenslider" />
+                
+            </li>
+            <li *ngFor="let img of imagen4">
+                <img [src]="img" class="imagenslider" />
+              
+            </li>
+        </ul>
+    </div>
+    
+</section>
+
+<section class="noticias">
+    <article class="main_content">
+      <div class="cards-s"></div>
+      <section class="s-categories" id="grafica">
+        <h2 class="s-titulo">Trámites y Servicios</h2>
+        <div class="s-container">
+  
+          <div class="full-card">
+            <div class="card transition">
+              <div class="card_circle transition">
+                <div *ngFor="let img of imagen5">
+                  <img [src]="img" class="logo" /></div>
+              </div>
+              <h2 class="transition">Registro Unico de Identificación Galactica</h2>
+              <p>Haz parte de una communidad</p>
+              <div class="cta-container transition"><a href="#" class="cta">Click Aqui</a></div>
+            </div>
+          </div>
+          
+          <div class="full-card">
+            <div class="card transition">
+              <div class="card_circle transition">
+                <div *ngFor="let img of imagen7">
+                  <img [src]="img" class="logo" /></div>
+              </div>
+              <h2 class="transition">Actualización galaxia de Residencia</h2>
+              <p>Actualiza tu dirección de correspondencia</p>
+              <div class="cta-container transition"><a href="#" class="cta">Click Aqui</a></div>
+            </div>
+          </div>
+
+          
+          <div class="full-card">
+            <div class="card transition">
+              <div class="card_circle transition">
+                <div *ngFor="let img of imagen6">
+                  <img [src]="img" class="logo" /></div>
+              </div>
+              <h2 class="transition">Trabaja con nosotros</h2>
+              <p>Apoya una galaxia</p>
+              <div class="cta-container transition"><a href="#" class="cta">Click Aqui</a></div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+    </article>
+  </section>

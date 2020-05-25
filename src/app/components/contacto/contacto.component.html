@@ -1,0 +1,46 @@
+<article class="main_content">
+<section  class="section3">
+    <div class="wrap"> 
+        <h1 class="section-title">CONTACTANOS</h1>
+        <h3 class="compra">CONSULTA FLASH </h3>
+        <button (click)="mostrar5($event)">Mensaje Rapido</button>
+          
+        <h3 class="compra">CONSULTA PROCESOS DE REGISTRO Y ACTUALIZACIÓN: </h3>
+        <div class="contenedor-formulario">
+            <form class="formulario" action=""> 
+                <div class=input-group>
+                    <input class="form-item" type="text" id="name" name="name">
+                    <label for="name">Escribe tu nombre</label>
+                </div>
+                <div class=input-group><input class="form-item" type="text" id="lastName" name="lastName">
+                    <label for="lastName">Escribe tu apellido</label>
+                </div>
+                <div class=input-group><input class="form-item" type="email" id="email" name="email">
+                    <label for="email">Escribe tu correo</label>
+                </div>
+                <div class=input-group><input class="form-item" type="text" id="telephone" name="telephone">
+                    <label for="telephone">Escribe tu numero de identificación galactica</label>
+                </div>
+                <h3 class="compra"> Deseo consultar sobre : </h3>
+                <div class="input-group radio">
+                    <input type="radio" name="sexo" id="hombre" value="Hombre">
+                     <label for="hombre">Actualización información</label>
+                    <input type="radio" name="sexo" id="mujer" value="Mujer">
+                     <label for="mujer">Subasta anual</label>
+                </div>
+
+                <div>
+                    <textarea class="text-area" name="message"  placeholder="OTRO? Escribe aqui" cols="50"
+                    rows="2"></textarea>
+        
+                    <input type="submit" id="btn-submit" value="Enviar">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+</article>
+
+   

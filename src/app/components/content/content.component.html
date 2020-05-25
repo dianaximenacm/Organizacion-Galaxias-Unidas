@@ -1,0 +1,61 @@
+<div class=marque>
+  <MARQUEE> </MARQUEE>
+  <MARQUEE BGCOLOR="#b8dcfc" DIRECTION=LEFT SCROLLDELAY=100 HEIGHT=20> Cada persona es un
+    universo, uneté a nuestras galaxias.</MARQUEE> <b><h1 id="titulo-bienvenida" class="titulo-bienvenida">BIENVENIDO LA ORGANIZACIÓN DE LAS GALAXIAS UNIDAS</h1>  </b>
+</div>
+<section class="noticias">
+  <article class="main_content">
+    <div class="cards-s"></div>
+    <section class="s-categories" id="grafica">
+      <h2 class="s-titulo">Noticias Recientes</h2>
+      <div class="s-container">
+
+        <div class="full-card">
+          <div class="card transition">
+            <div class="card_circle transition">
+              <div *ngFor="let img of imagenoti1">
+                <img [src]="img" class="logo" /></div>
+            </div>
+            <h2 class="transition"> COMETA EN SPRINFIELD</h2>
+            <p>El Asteroide visitaría la taberna de residente galaxia Espiral. El profesor Flik presenta su plan en
+              reunion local.</p>
+            <div class="cta-container transition"><a href="#" class="cta">Leer más</a></div>
+          </div>
+        </div>
+
+        <div class="full-card">
+          <div class="card transition">
+            <div class="card_circle transition">
+              <div *ngFor="let img of imagenoti2">
+                <img [src]="img" class="logo" /></div>
+            </div>
+            <h2 class="transition">ASTEROIDE DISCRIMINADO</h2>
+            <p>Asteroide que venia a de turismo presenta cargos por discriminación a periodista.</p>
+            <div class="cta-container transition"><a href="#" class="cta">Leer más</a></div>
+          </div>
+        </div>
+
+        <div class="full-card">
+          <div class="card transition">
+            <div class="card_circle transition">
+              <div *ngFor="let img of imagenoti3">
+                <img [src]="img" class="logo" /></div>
+            </div>
+            <h2 class="transition">VIDEO DE OTRO MUNDO</h2>
+            <p>El gran exito de Astronomia esta orbitando a otros mundos.</p>
+            <div class="cta-container transition"><a href="#" class="cta">Leer más</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</section>
+
+
+<h2 class="ayuda">Necesitas Ayuda? <input type="text" name="search" placeholder="Busca aqui"> </h2>
+<div class="vertical-menu">
+  <a href="#" class="active">TRÁMITES Y SERVICIOS MÁS CONSULTADOS</a>
+  <a routerLink="/galaxias">Registro único de identidad galactica</a>
+  <a routerLink="/galaxias">Actualización de Galaxia de residencia</a>
+  <a href="#">Subasta Anual</a>
+</div>

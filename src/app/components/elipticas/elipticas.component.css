@@ -1,0 +1,135 @@
+
+.main_content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: -8px;
+    background: linear-gradient(90deg, #137CA3 10%, #274c55 90%);
+    border-radius: 2px;
+}
+
+
+.button {
+    height:50px;
+    border-radius: 10px;
+    color: #769cb5;
+}
+.sliderdivitext{
+    display: inline-flex;
+    box-sizing: content-box;
+    width: 100%;
+    margin: 50px;
+}
+
+.textoslider{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #4a7385;
+    width: 50%;
+    padding: 2px;
+    margin-left: 5px;
+ }
+
+.tituloslider1{
+    color: #DDE8F0;
+    text-align: center;
+    font-size: 15px;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 3px;
+}
+
+.tituloslider2{
+    color: #DDE8F0;
+    font-size: 35px;
+    text-shadow: -3px -3px 5px  #4a7385;
+    font-family:Raleway, sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+p {
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    color: #DDE8F0;
+    letter-spacing: 1px;
+}
+
+.slider {
+	width: 39%;
+	margin: auto;
+    overflow: hidden;
+    box-sizing: content-box;
+    height: 400px;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+    width: 400%;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    color: #DDE8F0;
+    letter-spacing: 1px;
+  
+ 
+}
+
+.slider img {
+    width: 87%;
+    height: 31%;
+    border-radius: 10px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+@media (max-width:600px){
+    .sliderdivitext{
+        width: 100%;
+        height: 400px;
+    }
+}
+@media (min-width:600px){
+    .sliderdivitext{
+     width: 100%;
+     height: 400px;
+ }   
+}
+/* Para dispositivos medianos */
+@media(min-width:768px){
+    .sliderdivitext {
+width: 100%;
+height: 420px;
+    }
+}
+
+@media (min-width:992px){
+    .sliderdivitext{
+        width: 100%;
+        height: 400px;
+    }
+}
+/* Dispositivos muy grandes */
+@media (min-width:1200px){
+    .sliderdivitext{
+        width: 100%;
+        height: 600px;
+    }
+}

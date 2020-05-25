@@ -1,0 +1,149 @@
+
+/* COLOR */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+ul { 
+  list-style-type: none;
+  display: inline-flex;
+  align-items: start;
+  list-style: none;
+}
+.li {
+    padding: 6px 0;
+}
+a {
+      --fill-color: snow;
+      position: relative;
+      display: block;
+      padding: 4px 0;
+      font: 700 3rem Raleway, sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px var(--fill-color);
+      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+      color: transparent;
+      background-clip: text;
+      transition: 0.5s linear;
+      font-size: 30px;
+      margin-left: 30px;
+}
+ a:hover {
+        background-size: 100%;
+      }
+    
+/* END COLOR */
+/* DROPDOWN  */
+
+.dropbtn {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3f5f6e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 1px;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #5e7792}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+ /* RESPONSIVE */
+ .iconobitart{
+    text-align: center;
+    padding-top: 15px;
+}
+.logo{
+    width: 103px;
+    list-style: none;
+    margin-left: -62px;
+}
+.main_header{
+    text-align: center;
+    list-style: none;
+  justify-content: center;
+  background-color: #161d27;
+    
+}
+/* Para ocultar el boton del menu clickeable*/
+#boton_menu{
+display: none;
+}
+/* Seudoclase desencendiente */
+header label{
+display: none;
+    width: 100px;
+    padding: 10px;
+    background-color: #161d27;
+}
+
+header label:hover{
+cursor: pointer;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+}
+.menu li{
+    padding: 20px 50px 0px 50px;
+ /*  desde arriba como las manecillas del reloj*/
+
+}
+/*  padding-top: 15px;
+padding-right: 20px;*/
+
+
+/* Para quitar decoraciones del texto en el menu */
+.menu li a {
+    text-decoration: none;
+    padding: 15px;
+}
+/* Cambia segun el tamaño del dispositivo */
+/* condiciones en () y regla en { }*/
+@media (max-width:920px){
+
+    header label{
+        display: block;
+        height: 70px;
+    }
+        .menu {
+        position: absolute;
+        background: #5e7792;
+        width: 95%;
+        margin-left: -100%;
+        transition: all 0.9s;
+        z-index: 100;
+    }
+   
+    .menu ul {
+        /* Selector avanzado */
+        display: block;
+    }
+    #boton_menu:checked ~ .menu{
+        margin: 0px;
+    }
+    .menu li:hover{
+list-style: none;
+    }
+}

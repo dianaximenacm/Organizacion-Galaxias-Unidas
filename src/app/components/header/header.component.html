@@ -1,0 +1,26 @@
+
+    <div class="main_header">
+        <input type="checkbox" id="boton_menu">
+        <label class="icono_menu" for="boton_menu">
+         
+          <li *ngFor= "let img of imagen" >
+           <img [src]="img" class="logo"/></li>
+    
+    </label>
+    <nav class="menu">
+      <ul>
+        <li><a routerLink="/" > Inicio</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+          <div class="dropdown">
+            <button class="dropbtn"> <li> <a routerLink="/galaxias">Galaxias</a></button>
+            <div class="dropdown-content">
+              <li><a routerLink="/irregulares">Subasta Anual</a></li>
+              <li><a routerLink="/elipticas">Embajadores</a></li>
+            </div>
+          </div>
+         <li><a  (click)="ingreso($event)" id="login1"  routerLink="/" > 
+            Ingreso/salida</a></li>
+
+      </ul>
+    </nav>
+  </div>

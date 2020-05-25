@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+.textofooter{
+    padding-top: 8px;
+    width: 100%;
+    font-family:  Raleway, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    background-color: #161d27;
+    color: #b8dcfc;
+}
+
+.logo{
+    width: 200px;
+    list-style: none;
+}
